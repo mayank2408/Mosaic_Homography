@@ -1,1 +1,2 @@
 # Mosaic_Homography
+We are given multiple images taken from a camera by rotating it with its camera center fixed. We have to combine multiple photographic images with overlapping fields of view to produce a segmented panorama. Used SURF features to generate a homography with RANSAC for robustness followed by bilinear interpolation to resample the image. Also used alpha blending to smooth the multiple images into a single image and repeated the process for different images to produce a panorama.
