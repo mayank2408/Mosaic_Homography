@@ -1,0 +1,11 @@
+I1 = imread('image01.jpg') ;
+I2 = imread('image02.jpg') ;
+I3 = imread('image03.jpg') ;
+I4 = imread('image04.jpg') ;
+I5 = imread('image05.jpg') ;
+H12 = mos2(I1,I2);
+H23 = mos2(I2,I3);
+H34 = mos2(I3,I4);
+H45 = mos2(I4,I5);
+img=final_combine_without_blend(I1,I2,I3,I4,I5,H12,H23,H34,H45);
+im=uint8(img);
